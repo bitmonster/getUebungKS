@@ -1,5 +1,5 @@
 import java.io.BufferedReader;
-import java.io.InputStream;
+//import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
@@ -16,7 +16,7 @@ public class Fb16converter {
         
     }
     
-public static List getData(String address) throws Exception{
+public List getData(String address) throws Exception{
     List<Uebung> list1 = new LinkedList<Uebung>();
     
     URL url = new URL(address);
