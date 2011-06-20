@@ -32,7 +32,6 @@ public List getData(String address) throws Exception{
     
     while(iter.isValid()){
         String x = (String)iter.getAttributes().getAttribute(HTML.Attribute.HREF);
-        //System.out.println(x);
        if(x.indexOf(".pdf")!= -1){
            list1.add( new Uebung(x,false));
        }
