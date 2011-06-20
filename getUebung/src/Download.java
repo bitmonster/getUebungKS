@@ -13,7 +13,7 @@ public class Download {
         System.out.println(fileList);
         System.out.println(fileList.size());
         for(int i = 0; i < fileList.size(); i++){
-            x = webUrl + fileList.get(i).getName();
+            x = webUrl +"/" +fileList.get(i).getName();
             System.out.println(x);
         }
     }
