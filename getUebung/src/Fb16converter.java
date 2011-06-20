@@ -12,6 +12,10 @@ import java.util.*;
 
 public class Fb16converter {
     
+    Fb16converter(){
+        
+    }
+    
 public static List getData(String address) throws Exception{
     List<Uebung> list1 = new LinkedList<Uebung>();
     

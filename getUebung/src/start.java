@@ -1,14 +1,17 @@
+import java.util.List;
+
 
 public class start {
 
-    /**
-     * @param args
-     * @throws Exception 
-     */
-    public static void main(String[] args) throws Exception {
+
+    public void main(String[] args) throws Exception {
+        String web = "http://www.mathematik.uni-kassel.de/mathfb16/SS11/DiskStruk/uebungen.html";
         
-        System.out.println(Fb16converter.getData("http://www.mathematik.uni-kassel.de/mathfb16/SS11/DiskStruk/uebungen.html").toString());
-        // TODO Auto-generated method stub
+        Fb16converter con = new Fb16converter();
+        Download dl = new Download();
+        List<Uebung> nl = con.getData(web);
+        dl.loadFiles(nl,web);
+
 
     }
 

@@ -1,3 +1,5 @@
+import java.util.Iterator;
+
 
 public class Uebung {
     private boolean get;
@@ -7,6 +9,7 @@ public class Uebung {
         this.get = get;
     }
     
+
     public String getName(){
         return name;
     }
@@ -20,6 +23,6 @@ public class Uebung {
         return this.get;
     }
     public String toString(){
-        return name + "  bereits geladen :" + get +"\n";
+        return name;
     }
 }
