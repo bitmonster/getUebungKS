@@ -15,6 +15,7 @@ public class Download {
         for(int i = 0; i < fileList.size(); i++){
             x = webUrl +"/" +fileList.get(i).getName();
             System.out.println(x);
+            fileList.get(i).setGet(true);
         }
     }
         
