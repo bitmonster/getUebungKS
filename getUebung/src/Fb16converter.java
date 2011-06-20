@@ -7,7 +7,10 @@ import javax.swing.text.html.HTML;
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
 
-public class Fb16converter throws Exception{
+public class Fb16converter {
+    
+public void getData(){
+    
     URL url = new URL("http://www.mathematik.uni-kassel.de/mathfb16/SS11/DiskStruk/uebungen.html");
     URLConnection con = url.openConnection();
     
@@ -24,5 +27,5 @@ public class Fb16converter throws Exception{
         System.out.println(iter.getAttributes().getAttribute(HTML.Attribute.HREF));
         iter.next();
     }
-    
+}
 }
