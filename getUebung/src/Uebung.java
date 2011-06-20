@@ -27,7 +27,7 @@ public class Uebung {
     public Uebung getPrevious(){
         return this.previous;
     }
-    public setGet(boolean get){
+    public void setGet(boolean get){
         this.get = get;
     }
     public boolean getGet(){
