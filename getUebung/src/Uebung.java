@@ -1,6 +1,3 @@
-import java.util.Iterator;
-
-
 public class Uebung {
     private boolean get;
     private String name;

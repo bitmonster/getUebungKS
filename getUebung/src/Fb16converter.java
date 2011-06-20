@@ -16,7 +16,7 @@ public class Fb16converter {
         
     }
     
-public List getData(String address) throws Exception{
+public List<Uebung> getData(String address) throws Exception{
     List<Uebung> list1 = new LinkedList<Uebung>();
     
     URL url = new URL(address);
