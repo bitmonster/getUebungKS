@@ -11,7 +11,6 @@ public class Start {
         String web2 = site;
         Fb16converter con = new Fb16converter();
         Download dl = new Download();
-        @SuppressWarnings("unchecked")
         List<Uebung> nl = con.getData(web);
         dl.loadFiles(nl,web2);
 
