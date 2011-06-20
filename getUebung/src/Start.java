@@ -25,10 +25,12 @@ public class Start {
             System.out.println(i+":  " + input);
             i++;
         }
+        System.out.println(i);
         String[] urlList = new String[i];
         i = 0;
         while((input = bfFile.readLine()) != null){
-            urlList[i] = input;           
+            urlList[i] = input;       
+            i++;
         }
         System.out.println("Von welcher Adresse holen:");
         return urlList[bf.read()-1] ; 
